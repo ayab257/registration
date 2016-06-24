@@ -12,9 +12,9 @@
 			<label for="email">Email:</label>
 			<input type="email" required><br><br>
 			<label for="password">Password </label>
-			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="form.pwd2.pattern = this.value;" required><br><br>
+			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="form.pwd2.pattern = this.value;" required><br><br>
 			<label for="confirm_passwoed">Confirm Password</label>
-			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required><br><br>
+			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2" required><br><br>
 			<button type="submit">submit</button>
 		</form>
 	</body>	
