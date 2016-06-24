@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>form</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>Registration Form</h1>
+		<form action="index2.html">
+			<label for="name">Name:</label>
+			<input type="text" pattern="\w+"><br><br>
+			<label for="email">Email:</label>
+			<input type="email" required><br><br>
+			<label for="password">Password </label>
+			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="form.pwd2.pattern = this.value;" required><br><br>
+			<label for="confirm_passwoed">Confirm Password</label>
+			<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required><br><br>
+			<button type="submit">submit</button>
+		</form>
+	</body>	
+</html>
+
